@@ -17,7 +17,7 @@ class SINModelTrainer:
         # Initialize the SpaCy model for the English language
         self.nlp = spacy.blank("en")
 
-    def train_model(self, training_data):
+    def train_model(self, training_data, save_path):
         """
         Trains the NER model using the provided training data.
 
@@ -54,7 +54,7 @@ class SINModelTrainer:
                     self.nlp.update(batch, drop=0.5, sgd=optimizer)
 
             # Save the trained model
-            self.nlp.to_disk("E:/test_assessement/my_model")
+            self.nlp.to_disk(save_path)
 
         return self.nlp
 

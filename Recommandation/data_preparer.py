@@ -22,6 +22,7 @@ def create_training_data():
         ("Insurance number: 690024836.", {"entities": [(18, 27, "SIN")]}),
         ("Here is my new SIN: 107734023.", {"entities": [(20, 29, "SIN")]}),
         ("For the record, use 578 823 012.", {"entities": [(20, 31, "SIN")]}),
+        ("Please check SIN 786 432 908.", {"entities": [(17, 28, "SIN")]})
     ]
 
 

@@ -31,7 +31,7 @@ class TestSINModelTrainer(unittest.TestCase):
         training_data = create_training_data()
 
         # Run the training process
-        trainer.train_model(training_data)
+        trainer.train_model(training_data, "E:/test_assessement/my_model")
 
         # Check if the model's 'ner' pipeline has been updated after training
         self.assertIn('ner', trainer.nlp.pipe_names, "NER pipeline should exist in the model after training")
