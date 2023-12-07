@@ -53,8 +53,8 @@ class SINModelTrainer:
                     # Update the model
                     self.nlp.update(batch, drop=0.5, sgd=optimizer)
 
-            # Save the trained model
-            self.nlp.to_disk(save_path)
+        # Save the trained model
+        self.nlp.to_disk(save_path)
 
         return self.nlp
 
